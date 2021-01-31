@@ -30,18 +30,27 @@ if __name__ == '__main__':
     for v in veh:
         if isinstance(v,ISwimAble):
             swims.append(v)
+    print('**********************************' * 2)
+    print('SwimAble vehicles:')
+    print('**********************************' * 2)
     for s in swims:
         print(s.__str__())
     movers = []
     for v in veh:
         if isinstance(v,IMoveAble):
             movers.append(v)
-    #for m in movers:
-        #print(m.__str__())
+    print('**********************************' * 2)
+    print('MoveAble vehicles:')
+    print('**********************************' * 2)
+    for m in movers:
+        print(m.__str__())
 
     flyers = []
     for f in veh:
         if isinstance(f, IFlyAble):
             flyers.append(f)
-    #for f in flyers:
-        #print(f.__str__())
+    print('**********************************' * 2)
+    print('FlyAble vehicles:')
+    print('**********************************' * 2)
+    for f in flyers:
+        print(f.__str__())
