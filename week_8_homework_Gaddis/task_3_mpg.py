@@ -8,6 +8,7 @@ class MympgGUI:
         self.main_window = tkinter.Tk()
         self.main_window.geometry('400x400')
         my_font = tkinter.font.Font(family='Arial', size=14)
+        self.main_window.title('GUI for task 3')
         self.gallons_frame = tkinter.Frame(self.main_window)
         self.miles_frame = tkinter.Frame(self.main_window)
         self.mpg_frame = tkinter.Frame(self.main_window)
