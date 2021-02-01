@@ -3,7 +3,7 @@ from tkinter import *
 from tkinter import messagebox
 from tkinter import font
 
-class MympgGUI:
+class MycelsGUI:
     def __init__(self):
         self.main_window = tkinter.Tk()
         self.main_window.geometry('400x400')
@@ -49,4 +49,4 @@ class MympgGUI:
 
 
 if __name__ == '__main__':
-    my_gui = MympgGUI()
+    my_gui = MycelsGUI()
