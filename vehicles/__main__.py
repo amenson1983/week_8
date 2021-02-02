@@ -1,10 +1,10 @@
+from vehicles.cpoint_class import CPoint
+from vehicles.vehicle_class import CVehicle
 
 
 class CCar:
     def __init__(self,price,speed,year):
         CVehicle.__init__(self,price,speed,year)
-
-
     def __str__(self):
         return f"{CVehicle.__str__(self)}"
     def __repr__(self):

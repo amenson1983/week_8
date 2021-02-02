@@ -6,8 +6,7 @@ class CVehicle(metaclass=abc.ABCMeta):
         def __init__(self, fuel):
             self.fuel = fuel
 
-    def __init__(self, price, speed, year, point):
-        self.point = point
+    def __init__(self, price, speed, year):
         self.year = year
         self.speed = speed
         self.price = price
@@ -50,6 +49,6 @@ class CVehicle(metaclass=abc.ABCMeta):
     def show(self): pass
 
     def __str__(self):
-        return f"Year: {self.year}, Price: {self.price}, Speed: {self.speed},Location: {self.point}"
+        return f"Year: {self.year}, Price: {self.price}, Speed: {self.speed}"
     def __repr__(self):
-        return f"{self.year}, {self.price}, {self.speed}, {self.point}"
+        return f"{self.year}, {self.price}, {self.speed}"
