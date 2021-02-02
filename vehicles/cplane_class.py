@@ -11,7 +11,7 @@ class CPlane(CVehicle, IFlyAble):
         return self.speed
 
     def __init__(self, price, speed, year,passangers, height):
-        CVehicle.__init__(self, price, speed, year, CPoint(1,1))
+        CVehicle.__init__(self, price, speed, year)
         self.height = height
         self.passangers = passangers
 

@@ -9,7 +9,7 @@ class CShip(CVehicle, ISwimAble):
         return self.speed
 
     def __init__(self, price, speed, year, port, passangers):
-        CVehicle.__init__(self, price, speed, year, CPoint(1,1))
+        CVehicle.__init__(self, price, speed, year)
         self.port = port
         self.passangers = passangers
 

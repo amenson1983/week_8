@@ -9,7 +9,7 @@ class CCar(CVehicle, IMoveAble):
         return self.speed
 
     def __init__(self,price,speed,year,passangers):
-        CVehicle.__init__(self,price,speed,year, CPoint(100000,1))
+        CVehicle.__init__(self,price,speed,year)
         self.passangers = passangers
 
     @property

@@ -1,5 +1,6 @@
 from vehicles.ccar_class import CCar
 from vehicles.interfaces_class import ISwimAble, IFlyAble, IMoveAble
+from vehicles.vehicle_class import CVehicle
 
 
 class BatMobile(CCar, ISwimAble, IFlyAble,IMoveAble):
@@ -25,4 +26,4 @@ class BatMobile(CCar, ISwimAble, IFlyAble,IMoveAble):
     def move(self):
         return self.speed
     def __str__(self):
-        return f'Batmobile. {super().__str__()}, Max. height: {self.height}, Passengers: {self.passangers}'
+        return f'Batmobile. {CVehicle.__str__(self)}, Max. height: {self.height}, Passengers: {self.passangers}'
